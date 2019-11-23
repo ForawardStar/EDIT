@@ -2,6 +2,6 @@
 ## training method
 python cyclegan.py
  
-##testing method
+## testing method
 python test.py
 
