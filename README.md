@@ -17,3 +17,6 @@ pyTorch >=1.4.0 (from https://pytorch.org/), numpy, PIL.
 
 ```python test.py```
 
+## Result
+![Reesuly](https://github.com/ForawardStar/EDIT/blob/master/exp.png)
+
