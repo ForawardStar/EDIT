@@ -26,3 +26,14 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 ## Results
 ![Reesuly](img/exp.png)
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
+## Citation
+```
+@misc{fu2019edit,
+    title={EDIT: Exemplar-Domain Aware Image-to-Image Translation},
+    author={Yuanbin Fu and Jiayi Ma and Lin Ma and Xiaojie Guo},
+    year={2019},
+    eprint={1911.10520},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
