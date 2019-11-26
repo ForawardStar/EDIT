@@ -19,4 +19,5 @@ pyTorch >=1.4.0 (from https://pytorch.org/), numpy, PIL.
 
 ## Result
 ![Reesuly](https://github.com/ForawardStar/EDIT/blob/master/exp.png)
+More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
 
