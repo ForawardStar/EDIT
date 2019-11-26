@@ -25,6 +25,7 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 
 ## Results
 ![Reesuly](img/exp.png)
+![Reesuly](img/ourf.png)
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
 ## Citation
 ```
