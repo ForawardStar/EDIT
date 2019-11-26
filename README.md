@@ -4,7 +4,7 @@
 We design a novel generative adversarial network, namely exemplar-domain aware image-to-image translator (EDIT for short). The principle behind is that, for images from multiple domains, the content features can be obtained by a uniform extractor, while (re-)stylization is achieved by mapping the extracted features specifically to different purposes (domains and exemplars). The generator of our EDIT comprises of a part of blocks configured by shared parameters, and the rest by varied parameters exported by an exemplar-domain aware parameter network. In addition, a discriminator is equipped during the training phase to guarantee the output satisfying the distribution of the target domain. Our EDIT can flexibly and effectively work on multiple domains and arbitrary exemplars in a unified neat model.
 
 ## Network Architecture
-https://github.com/ForawardStar/EDIT/blob/master/img/archf.png
+![Reesuly](https://github.com/ForawardStar/EDIT/blob/master/img/archf.png)
 
 ## Dependnecy
 python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
