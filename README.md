@@ -11,7 +11,7 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 ## Usage
 
 ### Training
-1. Download the dataset you want to use and change the dataset directory. More datatset can be found https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
+1. Download the dataset you want to use and change the dataset directory. More datatsets can be found https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
 
 2. Starting training using the following command
 
@@ -23,7 +23,7 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 
 ```python test.py```
 
-## Result
+## Results
 ![Reesuly](https://github.com/ForawardStar/EDIT/blob/master/img/exp.png)
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
 
