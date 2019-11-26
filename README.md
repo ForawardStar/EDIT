@@ -5,7 +5,8 @@ pyTorch >=1.4.0 (from https://pytorch.org/), numpy, PIL.
 ## Usage
 
 ### training
-1. Download the dataset you want to use and change the dataset directory. 
+1. Download the dataset you want to use and change the dataset directory.
+
 ```python train.py```
  
 ### testing
