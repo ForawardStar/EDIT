@@ -14,6 +14,6 @@ pyTorch >=1.4.0 (from https://pytorch.org/), numpy, PIL.
 ### Testing
 1. Put the pre-trained model in your own path and change the checkpoint path of the code
 2. Starting testing using the following command
-```python test.py```
 
+```python test.py```
 
