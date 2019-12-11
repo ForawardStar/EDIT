@@ -78,7 +78,7 @@ if cuda:
     criterion_GAN.cuda()
     criterion_cycle.cuda()
     criterion_style.cuda()
-
+ 
 if opt.epoch != 0:
     # Load pretrained models
     # G_AB.load_state_dict(torch.load('saved_models/%s/G_AB_%d.pth' % (opt.dataset_name, opt.epoch)))
@@ -256,10 +256,8 @@ for epoch in range(opt.epoch, opt.n_epochs):
 
         #loss_style_AB = torch.mean(torch.abs(1-fake_B))
         loss_style_BA = criterion_style(fakeA_mean_std, realA_mean_std)
-        if label == 3 or label == 4:
-            loss_style_AB = criterion_style(fakeB_mean_std, realB_mean_std)
-        else:
-            loss_style_AB = 0
+        loss_style_AB = criterion_style(fakeB_mean_std, realB_mean_std)
+        
         loss_style = loss_style_AB + loss_style_BA
 
         # Total loss
