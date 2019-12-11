@@ -31,6 +31,10 @@ If one want to use the exemplar image which doesn't belong to target domain, jus
 ![Reesuly](img/exp.png)
 ![Reesuly](img/ourf.png)
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
+
+## Implementation Details
+When translating shoes/handbags to shoes or translating facades (buildings) to semantic maps, style loss is not needed. Thus, our code in 'train.py' use a if statement to distinguish shoes/handbags to shoes and facades to maps from the other domains. In the special case of this code. 
+
 ## Citation
 ```
 @misc{fu2019edit,
