@@ -33,7 +33,7 @@ If one wants to use the exemplar image which doesn't belong to target domain, ju
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
 
 ## Implementation Details
-When translating shoes/handbags to edges or translating facades (buildings) to semantic maps, which means edges or semantic maps are exemplar images, style losses are not needed. Thus, our code in 'train.py' use a if statement to distinguish shoes/handbags to edges and facades to maps from the other domains. Our code set label == 0 and label == 1 to represent shoes to edges and facades to maps respectively, please change the following code in 'train.py'  if necessary according to your own settings.
+When translating shoes/handbags to edges or translating facades (buildings) to semantic maps, style losses are not needed because edges or semantic maps are exemplar images. Thus, our code in 'train.py' use a if statement to distinguish shoes/handbags to edges and facades to maps from the other domains. Our code sets label = 0 and label = 1 to represent shoes to edges and facades to maps respectively, please change the following code in 'train.py'  if necessary according to your own settings.
 ```
 if label == 3:
     loss_style_AB = criterion_style(fakeB_mean_std, realB_mean_std)
