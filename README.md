@@ -16,6 +16,9 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 2. Starting training using the following command
 
 ```python train.py```
+
+If one want to use the exemplar image which doesn't belong to taregt domain, just starting training using the following command
+``python train_CrossDomain.py```
  
 ### Testing
 1. Put the pre-trained model in your own path and change the checkpoint path of the code
