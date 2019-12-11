@@ -17,7 +17,7 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 
 ```python train.py```
 
-If one want to use the exemplar image which doesn't belong to taregt domain, just starting training using the following command
+If one want to use the exemplar image which doesn't belong to target domain, just starting training using the following command
 
 ```python train_CrossDomain.py```
  
