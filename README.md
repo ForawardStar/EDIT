@@ -17,7 +17,7 @@ python 3.5, pyTorch >= 1.4.0 (from https://pytorch.org/), numpy, Pillow.
 
 ```python train.py```
 
-If one want to use the exemplar image which doesn't belong to target domain, just starting training using the following command
+If one wants to use the exemplar image which doesn't belong to target domain, just starting training using the following command
 
 ```python train_CrossDomain.py```
  
@@ -33,7 +33,13 @@ If one want to use the exemplar image which doesn't belong to target domain, jus
 More Results can be found in our website: https://forawardstar.github.io/EDIT-Project-Page/
 
 ## Implementation Details
-When translating shoes/handbags to shoes or translating facades (buildings) to semantic maps, style loss is not needed. Thus, our code in 'train.py' use a if statement to distinguish shoes/handbags to shoes and facades to maps from the other domains. In the special case of this code. 
+When translating shoes/handbags to edges or translating facades (buildings) to semantic maps, style loss is not needed. Thus, our code in 'train.py' use a if statement to distinguish shoes/handbags to edges and facades to maps from the other domains. In the special case of this code, label == 0 and label == 1 represent shoes to edges and facades to maps respectively, please change the following code in 'train.py'  if necessary according to your own settings.
+```
+if label == 3:
+            loss_style_AB = criterion_style(fakeB_mean_std, realB_mean_std)
+        else:
+            loss_style_AB = 0
+```
 
 ## Citation
 ```
