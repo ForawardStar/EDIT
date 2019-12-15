@@ -82,9 +82,9 @@ if opt.epoch != 0:
     # Load pretrained models
     # G_AB.load_state_dict(torch.load('saved_models/%s/G_AB_%d.pth' % (opt.dataset_name, opt.epoch)))
     # G_BA.load_state_dict(torch.load('saved_models/%s/G_BA_%d.pth' % (opt.dataset_name, opt.epoch)))
-    metanet.load_state_dict(torch.load('saved_models/%s/metanet%d.pth' % (opt.dataset_name, opt.epoch-1)))
-    D_A.load_state_dict(torch.load('saved_models/%s/D_A_%d.pth' % (opt.dataset_name, opt.epoch-1)))
-    D_B.load_state_dict(torch.load('saved_models/%s/D_B_%d.pth' % (opt.dataset_name, opt.epoch-1)))
+    metanet = torch.load('saved_models/%s/metanet%d.pth' % (opt.dataset_name, opt.epoch-1))
+    D_A = torch.load('saved_models/%s/D_A_%d.pth' % (opt.dataset_name, opt.epoch-1))
+    D_B = torch.load('saved_models/%s/D_B_%d.pth' % (opt.dataset_name, opt.epoch-1))
 else:
     # Initialize weights
     metanet.apply(weights_init_normal)
